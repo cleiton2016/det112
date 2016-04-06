@@ -1,4 +1,11 @@
 @charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+	font-family: 'FonteLogo';
+	src:url("../_fonts/bubblegum-sans-regular.otf");
+}
 p{
 	text-align: justify;
 	text-indent: 50px;
@@ -25,8 +32,21 @@ div#interface img#icone{
 
 header#cabecalho{
 	border-bottom: 1px #606060 solid;
-	height: 230px;
-	background: url("../_imagens/glass-logo-peq.jpg") no-repeat;
+	height: 200px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 150px;
+}
+
+header#cabecalho h1 {
+	font-family: FonteLogo , sans-serif;
+	font-size: 30pt;
+	color: #60606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	margin-top: 50px;
+}
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pt;
+	color: #888888;
 }
 nav#menu{
 	display: block;
@@ -41,7 +61,7 @@ nav#menu ul {
 	text-transform: uppercase;
 	position: absolute;
 	top: 3px;
-	left: 550px;
+	left: 420px;
 }
 
 nav#menu li{
@@ -92,3 +112,30 @@ figure.foto-legenda figcaption {
 figure.foto-legenda:hover figcaption {
 	opacity: 1;
 }
+ section#corpo{
+ 	display: block;
+ 	width: 430px;
+ 	float: left;
+ 	border-right: 1px solid #606060;
+ 	padding-right:15px;
+ }
+ aside#lateral{
+ 	display: block;
+ 	width: 320px;
+ 	float: right;
+ }
+
+ footer#rodape{
+ 	border-top: 1px solid #606060;
+ 	clear: both;
+ }
+
+ footer#rodape p{
+ 	text-align: center;
+ }
+ table#tabelaSpec{
+ 	border: 1px solid #606060;
+ }
+ table#tabelaSpec td{
+ 	border: 1px solid #606060;
+ }
